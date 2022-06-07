@@ -27,8 +27,7 @@ function checkLanguage() {
     }
 
     if(localStorage.currLanguage != "en") {
-      const nextState = { additionalInformation: "Updated the URL with JS" };
-      history.replaceState(nextState, "", location.protocol + mainURL + localStorage.currLanguage);
+      location.replace(location.protocol + "//" + mainURL + localStorage.currLanguage);
     }
   }
 }
