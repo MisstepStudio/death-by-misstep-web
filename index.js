@@ -14,8 +14,8 @@ document.querySelector(".languageButton").addEventListener("click", function (){
 checkLanguage();
 
 function checkLanguage() {
-  const mainURL = "https://deathbymisstep.com/";
-  const currURL = location.href;
+  const mainURL = "deathbymisstep.com/";
+  const currURL = location.href.slice(location.href.indexOf("/") + 2);
 
   if(currURL != mainURL) {
     localStorage.currLanguage = getLanguageURL(currURL);
