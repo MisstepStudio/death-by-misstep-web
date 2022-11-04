@@ -6,17 +6,27 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #F806CC;
   font-family: "Montserrat", "sans-serif";
   font-weight: 900;
 }
 
-p, dl, ul {
+p,
+dl,
+ul {
   margin-bottom: 0;
 }
 
-p, em, dd, li {
+p,
+em,
+dd,
+li {
   color: white;
 }
 
@@ -28,12 +38,28 @@ a:hover {
   color: #EAF6F6;
 }
 
-dd, li {
+dd,
+li {
   text-align: left;
 }
 
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+  float: left;
+}
+
 /* Top Images */
-.top-img{
+.top-img {
   position: absolute;
   left: 2px;
   opacity: 0;
@@ -141,7 +167,8 @@ dd, li {
   width: 90%;
   margin: 25px auto;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
 /* Media Section */
@@ -159,24 +186,31 @@ dd, li {
 }
 
 /* Team Section */
-.team-member-link {
-  font-size: .96rem;
-  font-style: italic;
-}
-
-.team-member-link:hover {
-  font-size: 1rem;
+.team-member {
+  padding-left: 80px;
 }
 
 .team-member-img {
   margin: 20px 8px 20px 0;
-  width: 30%;
+}
+
+.team-card {
+  text-align: left;
+}
+
+.team-card-title,
+.team-card-category {
+  margin: 10px 0;
+}
+
+.team-card-title {
+  margin-top: 30px;
 }
 
 .team-logo-container {
   display: inline-block;
   position: relative;
-  margin-top: 15px;
+  margin-top: 25px;
   width: 10%;
 }
 
@@ -205,7 +239,9 @@ dd, li {
 }
 
 /* Media Queries */
-@media (max-width: 1440px) { /* Laptop */
+@media (max-width: 1440px) {
+
+  /* Laptop */
   /* Media Section */
   .media-img {
     width: 99%;
@@ -216,17 +252,9 @@ dd, li {
     padding-left: 8px;
   }
 
-  .team-member-link {
-    font-size: .66rem;
-  }
-
-  .team-member-link:hover {
-    font-size: .7rem;
-  }
-
   .team-member-img {
-    margin-right: 5px;
-    width: 25%;
+    /* margin-right: 5px; */
+    /* width: 25%; */
   }
 
   /* Footer Section */
@@ -235,7 +263,9 @@ dd, li {
   }
 }
 
-@media (max-width: 1000px) { /* Mobile */
+@media (max-width: 1000px) {
+
+  /* Mobile */
   /* Language Section */
   #language .button {
     width: 2%;
@@ -250,7 +280,10 @@ dd, li {
     width: 10%;
   }
 
-  .info-text, .info-description-list, .info-text, .info-list {
+  .info-text,
+  .info-description-list,
+  .info-text,
+  .info-list {
     font-size: 2.3rem;
   }
 
@@ -258,14 +291,6 @@ dd, li {
   .team-content {
     margin-left: 65px;
     text-align: left;
-  }
-
-  .team-member-link {
-    font-size: 1.8rem;
-  }
-
-  .team-member-link:hover {
-    font-size: 1.9rem;
   }
 
   .team-logo-container {
