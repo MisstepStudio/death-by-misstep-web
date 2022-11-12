@@ -14,7 +14,7 @@ h5,
 h6 {
   color: #F806CC;
   font-family: "Montserrat", "sans-serif";
-  font-weight: 900;
+  font-weight: 500;
 }
 
 p,
@@ -187,14 +187,15 @@ li {
 
 /* Team Section */
 .team-member {
-  padding-left: 80px;
+  padding-left: 20px;
 }
 
 .team-member-img {
-  margin: 20px 8px 20px 0;
+  margin: 20px;
 }
 
 .team-card {
+  padding-left: 6px;
   text-align: left;
 }
 
@@ -204,7 +205,25 @@ li {
 }
 
 .team-card-title {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+
+.team-card-category {
+  font-size: 1.0rem;
+}
+
+.team-card-content {
+  color: #939393;
+}
+
+.team-card-link {
+  margin-top: 25px;
+  color: #F806CC
+}
+
+.team-card-link:hover {
+  color: hsl(180, 40%, 94%);
 }
 
 .team-logo-container {
@@ -250,11 +269,6 @@ li {
   /* Team Section */
   .team-content div {
     padding-left: 8px;
-  }
-
-  .team-member-img {
-    /* margin-right: 5px; */
-    /* width: 25%; */
   }
 
   /* Footer Section */
