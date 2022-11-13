@@ -30,6 +30,10 @@ li {
   color: white;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -101,7 +105,7 @@ li {
 }
 
 .language-img {
-  width: 3%;
+  width: 2.5%;
   margin-right: 5px;
 }
 
@@ -116,6 +120,10 @@ li {
 /* Title Section */
 #title .container-fluid {
   padding: 0 10% 2%;
+}
+
+.title-img {
+  width: 70%;
 }
 
 /* Social Media Section */
@@ -144,6 +152,10 @@ li {
 }
 
 /* Info Section */
+.info-title-img {
+  width: 60%;
+}
+
 .info-img {
   padding: 25px 0;
   width: 90%;
@@ -172,7 +184,8 @@ li {
 }
 
 /* Media Section */
-.media-img {
+.media-title-img {
+  width: 85%;
   padding: 45px 0;
 }
 
@@ -187,7 +200,8 @@ li {
 
 /* Team Section */
 .team-member {
-  padding-left: 20px;
+  padding-left: 14px;
+  padding-right: 38px;
 }
 
 .team-member-img {
@@ -259,16 +273,30 @@ li {
 
 /* Media Queries */
 @media (max-width: 1440px) {
-
   /* Laptop */
-  /* Media Section */
-  .media-img {
+
+  /* Title Section */
+  .title-img {
     width: 99%;
+  }
+
+  /* Info Section */
+  .info-title-img {
+    width: 90%;
+  }
+
+  /* Media Section */
+  .media-title-img {
+    width: 90%;
   }
 
   /* Team Section */
   .team-content div {
     padding-left: 8px;
+  }
+
+  .team-title-img {
+    width: 80%;
   }
 
   /* Footer Section */
@@ -278,8 +306,8 @@ li {
 }
 
 @media (max-width: 1000px) {
-
   /* Mobile */
+
   /* Language Section */
   #language .button {
     width: 2%;
