@@ -331,8 +331,12 @@ li {
 
   /* Team Section */
   .team-content {
-    margin-left: 65px;
+    margin-left: 20px;
     text-align: left;
+  }
+
+  .team-member-img {
+    margin-left: 0px;
   }
 
   .team-logo-container {
