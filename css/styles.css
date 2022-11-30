@@ -205,10 +205,12 @@ li {
 }
 
 .team-member-img {
+  width: 80%;
   margin: 20px;
 }
 
 .team-card {
+  margin: 20px 0;
   padding-left: 6px;
   text-align: left;
 }
@@ -219,7 +221,6 @@ li {
 }
 
 .team-card-title {
-  margin-top: 20px;
   font-size: 1.25rem;
 }
 
