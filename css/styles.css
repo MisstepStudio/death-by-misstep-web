@@ -1,4 +1,8 @@
 body {
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
   background-color: #101010;
   font-family: "Montserrat";
   text-align: center;
@@ -159,7 +163,7 @@ li {
 }
 
 .info-img-logo {
-  width: 80%;
+  width: 86%;
 }
 
 .info-img-concept {
