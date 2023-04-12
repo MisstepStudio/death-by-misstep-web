@@ -1,12 +1,12 @@
 
-document.querySelector(".languageButton").addEventListener("click", function (){
+document.querySelector(".languageButton").addEventListener("click", function () {
   let newLanguage = this.innerHTML;
-  switch(newLanguage){
+  switch (newLanguage) {
     case "Español":
-    newLanguage = "es";
-    break;
+      newLanguage = "es";
+      break;
     default:
-    newLanguage = "en";
+      newLanguage = "en";
   }
   localStorage.currLanguage = newLanguage;
 });
@@ -17,16 +17,16 @@ function checkLanguage() {
   const mainURL = "deathbymisstep.com/";
   const currURL = location.href.slice(location.href.indexOf("/") + 2);
 
-  if(currURL != mainURL) {
+  if (currURL != mainURL) {
     localStorage.currLanguage = getLanguageURL(currURL);
   } else {
     const languageSet = localStorage.currLanguage ? true : false;
-    if(!languageSet) {
-      const browserLanguage = navigator.language.substr(0, 2);
+    if (!languageSet) {
+      const browserLanguage = navigator.language.substring(0, 2);
       localStorage.currLanguage = browserLanguage;
     }
 
-    if(localStorage.currLanguage != "en") {
+    if (localStorage.currLanguage == "es") {
       location.replace(location.protocol + "//" + mainURL + localStorage.currLanguage);
     }
   }
