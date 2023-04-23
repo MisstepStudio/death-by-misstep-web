@@ -209,7 +209,7 @@ li {
 
 .team-member-img {
   width: 80%;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .team-card {
@@ -240,7 +240,8 @@ li {
   color: #ea110f
 }
 
-.team-card-link:hover {
+.team-card-link:hover,
+.team-card-link-hover {
   color: #eaf6f6;
 }
 
