@@ -1,3 +1,16 @@
+const teamMemberImgs = document.querySelectorAll(".team-member-img");
+const teamCardLinks = document.querySelectorAll(".team-card-link");
+
+for (let i = 0; i < teamMemberImgs.length; i++) {
+  teamMemberImgs[i].addEventListener("mouseover", function () {
+    teamCardLinks[i].classList.toggle("team-card-link-hover");
+  });
+
+  teamMemberImgs[i].addEventListener("mouseout", function () {
+    teamCardLinks[i].classList.toggle("team-card-link-hover");
+  });
+}
+
 const Languages = {
   English: "en",
   Spanish: "es"
