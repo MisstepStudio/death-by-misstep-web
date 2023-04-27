@@ -265,6 +265,11 @@ li {
   width: 10%;
 }
 
+/* Contributors Section */
+.contributor-img {
+  width: 25%;
+}
+
 /* Footer Section */
 #footer .container-fluid {
   padding: 1% 0;
@@ -291,11 +296,16 @@ li {
   }
 
   /* Team Section */
+  .team-title-img {
+    width: 80%;
+  }
+
   .team-content div {
     padding-left: 8px;
   }
 
-  .team-title-img {
+  /* Contributors Section */
+  .contributors-title-img {
     width: 80%;
   }
 
@@ -341,6 +351,11 @@ li {
 
   .team-logo-container {
     width: 20%;
+  }
+
+  /* Contributors Section */
+  .contributor {
+    margin: 40px 0;
   }
 
   /* Footer Section */
