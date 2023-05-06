@@ -1,34 +1,7 @@
-const teamMemberImgs = document.querySelectorAll(".team-member-img");
-const teamCardLinks = document.querySelectorAll(".team-card-link");
-
-for (let i = 0; i < teamMemberImgs.length; i++) {
-  teamMemberImgs[i].addEventListener("mouseover", function () {
-    teamCardLinks[i].classList.toggle("team-card-link-hover");
-  });
-
-  teamMemberImgs[i].addEventListener("mouseout", function () {
-    teamCardLinks[i].classList.toggle("team-card-link-hover");
-  });
-}
-
 const Languages = {
   English: "en",
   Spanish: "es"
 }
-
-document.querySelector(".languageButton").addEventListener("click", function () {
-  let newLanguage = this.innerHTML;
-  switch (newLanguage) {
-    case "Español":
-      newLanguage = Languages.Spanish;
-      break;
-    default:
-      newLanguage = Languages.English;
-  }
-  localStorage.currLanguage = newLanguage;
-});
-
-checkLanguage();
 
 function checkLanguage() {
   const mainURL = "deathbymisstep.com/";
@@ -59,4 +32,41 @@ function isLanguageAvailable(currLanguage) {
     if (Languages[language] === currLanguage) return true;
   }
   return false;
+}
+
+checkLanguage();
+
+document.addEventListener("DOMContentLoaded", () => {
+  AddEventListenersInTeam();
+
+  document.querySelector(".languageButton").addEventListener("click", function () {
+    ChangeLanguage();
+  });
+});
+
+function AddEventListenersInTeam() {
+  const teamMemberImgs = document.querySelectorAll(".team-member-img");
+  const teamCardLinks = document.querySelectorAll(".team-card-link");
+
+  for (let i = 0; i < teamMemberImgs.length; i++) {
+    teamMemberImgs[i].addEventListener("mouseover", function () {
+      teamCardLinks[i].classList.toggle("team-card-link-hover");
+    });
+
+    teamMemberImgs[i].addEventListener("mouseout", function () {
+      teamCardLinks[i].classList.toggle("team-card-link-hover");
+    });
+  }
+}
+
+function ChangeLanguage() {
+  let newLanguage = this.innerHTML;
+  switch (newLanguage) {
+    case "Español":
+      newLanguage = Languages.Spanish;
+      break;
+    default:
+      newLanguage = Languages.English;
+  }
+  localStorage.currLanguage = newLanguage;
 }
