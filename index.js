@@ -1,7 +1,7 @@
 const Languages = {
   English: "en",
-  Spanish: "es"
-}
+  Spanish: "es",
+};
 
 function checkLanguage() {
   const mainURL = "deathbymisstep.com/";
@@ -18,7 +18,9 @@ function checkLanguage() {
 
     if (localStorage.currLanguage != Languages.English) {
       if (!isLanguageAvailable(localStorage.currLanguage)) return;
-      location.replace(location.protocol + "//" + mainURL + localStorage.currLanguage);
+      location.replace(
+        location.protocol + "//" + mainURL + localStorage.currLanguage
+      );
     }
   }
 }
@@ -39,9 +41,11 @@ checkLanguage();
 document.addEventListener("DOMContentLoaded", () => {
   AddEventListenersInTeam();
 
-  document.querySelector(".languageButton").addEventListener("click", function () {
-    ChangeLanguage();
-  });
+  document
+    .querySelector(".languageButton")
+    .addEventListener("click", function () {
+      ChangeLanguage();
+    });
 });
 
 function AddEventListenersInTeam() {
