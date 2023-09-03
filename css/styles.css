@@ -1,10 +1,5 @@
 body {
-  background-image: url(../images/background.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat-y;
-  background-color: #101010;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   text-align: center;
 }
 
@@ -14,8 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ea110f;
-  font-family: "Montserrat", "sans-serif";
+  color: white;
   font-weight: 500;
 }
 
@@ -49,18 +43,7 @@ li {
   text-align: left;
 }
 
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12 {
+.team-member div {
   float: left;
 }
 
@@ -75,21 +58,20 @@ li {
   opacity: 1;
 }
 
-/* Iframes */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+/* Rows */
+.row {
+  margin-top: 1rem;
+}
+
+/* Cards */
+.card-header h5 {
+  margin-bottom: 0;
 }
 
 /* Containers */
 .container-fluid {
-  padding: 2% 10%;
+  padding: 3% 16%;
+  padding-bottom: 4%;
 }
 
 .content-box {
@@ -97,18 +79,7 @@ li {
 }
 
 /* Sections */
-.color-section {
-  /* background-color: #0e0e0e; */
-}
-
 /* Title Section */
-#title .container-fluid {
-  background-image: url("../images/titleBanner.png");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-}
-
 .language-container {
   padding: 1% 9%;
 }
@@ -126,95 +97,56 @@ li {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-.wishlist-steam-container {
-  margin-top: 150px;
+#title {
+  background-image: url("../images/titleBanner.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.btn-wishlist-steam {
+.wishlist-steam-container {
+  margin-top: 175px;
+}
+
+.btn-wishlist-steam,
+.btn-wishlist-steam:disabled {
+  /* TODO: Remove ':disabled' when Steam page is published. */
   padding: 15px 50px;
   text-transform: uppercase;
+  background-color: #0c1d29;
+  border-color: #0c1d29;
+  margin: 100px;
+}
+
+.btn-wishlist-steam:hover {
   background-color: #0c1d29;
   border-color: #0c1d29;
 }
 
 .btn-text {
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
-/* Social Media Section */
-#social-media .container-fluid {
-  padding: 0.5% 0;
+/* Game Section */
+#game {
+  background-color: rgb(23, 22, 26);
 }
 
-.social-container {
-  display: inline-block;
-  position: relative;
-  width: 5%;
+/* FAQ Section */
+#faq {
+  background-image: url("../images/screenshot3.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.social-container img {
+.faq-img {
   width: 100%;
-  height: 100%;
-}
-
-.social-container:hover .social-img {
-  opacity: 0;
-}
-
-/* Content Section */
-#content .container-fluid {
-  padding-top: 2%;
-}
-
-/* Info Section */
-.info-title-img {
-  width: 35%;
-}
-
-.info-img {
-  padding: 25px 0;
-}
-
-.info-img-logo {
-  width: 86%;
-}
-
-.info-img-concept {
-  width: 50%;
-}
-
-.info-text {
-  padding: 0 40px;
-  text-align: left;
-}
-
-.info-description-list {
-  padding: 0 40px;
-}
-
-.info-list {
-  padding: 0 75px;
-}
-
-.info-video-container {
-  position: relative;
-  width: 90%;
-  margin: 25px auto;
-  overflow: hidden;
-  padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */
-}
-
-.screenshots-img {
-  margin-bottom: 30px;
-  width: 96%;
-}
-
-.devlog-img {
-  width: 102%;
 }
 
 /* Team Section */
+#team {
+  background-color: rgb(23, 22, 26);
+}
+
 .team-member {
   padding-left: 14px;
   padding-right: 38px;
@@ -258,10 +190,49 @@ li {
   color: #eaf6f6;
 }
 
+/* Contributors Section */
+#contributors {
+  background-image: url("../images/screenshot2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contributor-img {
+  width: 25%;
+}
+
+/* Social Media Section */
+#social-media {
+  background-color: rgb(23, 22, 26);
+}
+
+.social-media-container {
+  padding-bottom: 2%;
+}
+
+.social-media-container a {
+  color: white;
+  padding: 10px;
+  margin: 0 40px;
+  font-size: 2rem;
+}
+
+.social-media-container a:hover {
+  color: black;
+}
+
+/* Footer Section */
+#footer {
+  background-color: rgb(23, 22, 26);
+}
+
+#footer .container-fluid {
+  padding: 1% 0;
+}
+
 .team-logo-container {
   display: inline-block;
   position: relative;
-  margin-top: 65px;
   width: 10%;
 }
 
@@ -276,16 +247,6 @@ li {
 
 .team-logo {
   width: 10%;
-}
-
-/* Contributors Section */
-.contributor-img {
-  width: 25%;
-}
-
-/* Footer Section */
-#footer .container-fluid {
-  padding: 1% 0;
 }
 
 .copyright {
@@ -303,10 +264,9 @@ li {
     width: 99%;
   }
 
-  /* Info Section */
-  .info-title-img {
-    width: 65%;
-  }
+  /* Game Section */
+
+  /* FAQ Section */
 
   /* Team Section */
   .team-title-img {
@@ -322,6 +282,8 @@ li {
     width: 80%;
   }
 
+  /* Social Section */
+
   /* Footer Section */
   .copyright {
     font-size: 0.6rem;
@@ -331,21 +293,12 @@ li {
 @media (max-width: 1000px) {
   /* Mobile */
 
+  /* Title Section */
   .language-img {
     width: 5%;
   }
 
-  /* Social Media Section */
-  .social-container {
-    width: 10%;
-  }
-
-  .info-text,
-  .info-description-list,
-  .info-text,
-  .info-list {
-    font-size: 2.3rem;
-  }
+  /* FAQ Section */
 
   /* Team Section */
   .team-content {
@@ -357,16 +310,18 @@ li {
     margin-left: 0px;
   }
 
-  .team-logo-container {
-    width: 20%;
-  }
-
   /* Contributors Section */
   .contributor {
     margin: 40px 0;
   }
 
+  /* Social Media Section */
+
   /* Footer Section */
+  .team-logo-container {
+    width: 20%;
+  }
+
   .copyright {
     font-size: 1.1rem;
   }

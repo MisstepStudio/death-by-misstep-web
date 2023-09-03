@@ -1,204 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <title>Death By Misstep – Rhythm, Stealth and Horror game.</title>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Death By Misstep, First-Person, Rhythm, Stealth, Horror, Video game, Party, Robot, Music, Cyberpunk, Futuristic"
+    />
+    <meta
+      name="description"
+      content="🎵 Death By Misstep is an upcoming First-Person Rhythm, Stealth and Horror game set on a party cruise. Breathe to the rhythm of cruise music's beat and survive this nightmare!"
+    />
+    <meta name="author" content="Misstep Studio" />
+    <meta property="og:url" content="https://deathbymisstep.com" />
+    <meta property="og:title" content="Death By Misstep" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="canonical" href="https://deathbymisstep.com" />
 
-<head>
-  <title>Death By Misstep – Rhythm, Stealth and Horror game.</title>
-  <meta charset="utf-8">
-  <meta name="keywords"
-    content="Death By Misstep, First-Person, Rhythm, Stealth, Horror, Video game, Party, Robot, Music, Cyberpunk, Futuristic">
-  <meta name="description"
-    content="🎵 Death By Misstep is an upcoming First-Person Rhythm, Stealth and Horror game set on a party cruise. Breathe to the rhythm of cruise music's beat and survive this nightmare!">
-  <meta name="author" content="Misstep Studio">
-  <meta property="og:url" content="https://deathbymisstep.com">
-  <meta property="og:title" content="Death By Misstep">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="favicon.ico">
-  <link rel="canonical" href="https://deathbymisstep.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
-    rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- CSS Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/87cac6b2b6.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/87cac6b2b6.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5SVCLQCNET"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SVCLQCNET"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-5SVCLQCNET");
+    </script>
+  </head>
 
-    gtag('config', 'G-5SVCLQCNET');
-  </script>
-</head>
-
-<body>
-
-  <!-- Title Section -->
-  <section id="title">
-    <div class="container-fluid">
-      <!-- Language -->
-      <div class="language-container d-flex justify-content-end align-items-center">
-        <img class="language-img" src="images/pickLanguage.png">
-        <button type="button" class="btn btn-success language-btn-left" disabled>English</button>
-        <a class="btn btn-secondary language-btn-right languageButton" href="es" role="button">Español</a>
+  <body>
+    <!-- Title Section -->
+    <section id="title">
+      <div
+        class="language-container d-flex justify-content-end align-items-center"
+      >
+        <img class="language-img" src="images/pickLanguage.png" />
+        <button
+          type="button"
+          class="btn btn-success language-btn-left"
+          disabled
+        >
+          English
+        </button>
+        <a
+          class="btn btn-secondary language-btn-right languageButton"
+          href="es"
+          role="button"
+          >Español</a
+        >
       </div>
 
       <div class="wishlist-steam-container">
-        <a class="btn btn-primary btn-wishlist-steam" style="margin: 25px;" href="https://store.steampowered.com/app/" target="_blank">
+        <!-- <a
+          class="btn btn-primary btn-wishlist-steam"
+          href="https://store.steampowered.com/app/"
+          target="_blank"
+        >
           <span class="btn-text">Wishlist on Steam today!</span>
           <span>
             <i class="fa fa-steam"></i>
           </span>
-        </a>
+        </a> -->
+        <!-- TODO: Remove the button when Steam page is published. -->
+        <button class="btn btn-primary btn-wishlist-steam" disabled>
+          <span class="btn-text">Wishlist on Steam comming soon!</span>
+          <span>
+            <i class="fa fa-steam"></i>
+          </span>
+        </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Social Media Section -->
-  <section id="social-media">
-    <div class="container-fluid">
-      <div class="social-container">
-        <a href="https://twitter.com/DeathByMisstep" target="_blank">
-          <img class="social-img" src="images/twitter.png" alt="Twitter" title="Twitter">
-          <img class="top-img" src="images/twitterHover.png" alt="Twitter" title="Twitter">
-        </a>
-      </div>
-      <div class="social-container">
-        <a href="https://www.instagram.com/deathbymisstep" target="_blank">
-          <img class="social-img" src="images/instagram.png" alt="Instagram" title="Instagram">
-          <img class="top-img" src="images/instagramHover.png" alt="Instagram" title="Instagram">
-        </a>
-      </div>
-      <div class="social-container">
-        <a href="https://youtube.com/@DeathByMisstep" target="_blank">
-          <img class="social-img" src="images/youtube.png" alt="YouTube" title="YouTube">
-          <img class="top-img" src="images/youtubeHover.png" alt="YouTube" title="YouTube">
-        </a>
-      </div>
-      <div class="social-container">
-        <a href="https://discord.gg/7TXUN7avjt" target="_blank">
-          <img class="social-img" src="images/discord.png" alt="Discord" title="Discord">
-          <img class="top-img" src="images/discordHover.png" alt="Discord" title="Discord">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Content Section -->
-  <section id="content">
-    <div class="container-fluid">
-
-      <div class="row">
-
-        <!-- Info Section -->
-        <div class="content-box col-lg-12">
-          <img class="info-title-img" src="images/infoTitle.png" alt="Info Section Title">
+    <!-- Game Section -->
+    <section id="game">
+      <div class="container-fluid">
+        <div class="game-title row">
+          <div>
+            <h2 style="text-align: center">
+              <strong>NEW RHYTHM, STEALTH AND HORROR GENRE</strong>
+            </h2>
+          </div>
+          <div>
+            <h4 style="text-align: center">
+              <strong>Death By Misstep</strong> is an upcoming First-Person
+              Rhythm, Stealth and Horror game set on a party cruise where a
+              massive massacre by robots is happening.
+            </h4>
+          </div>
         </div>
 
-        <div class="color-section content-box col-lg-8">
-          <p class="info-text"><strong>Death By Misstep</strong> is an upcoming First-Person Rhythm, Stealth and
-            Horror game set on a party cruise where a massive massacre by robots is happening.</p>
-          <div class="info-video-container">
-            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/06GQp8vvsEo"
-              title="YouTube video player" frameborder="0"
+        <div class="game-media row d-flex justify-content-center">
+          <div class="ratio ratio-16x9 w-50">
+            <iframe
+              src="https://www.youtube.com/embed/06GQp8vvsEo"
+              title="YouTube Death By Misstep teaser"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <br />
-          <p class="info-text">Play as Jessi while she tries to survive the massacre by exploring the different
-            locations of the boat looking for a way out.</p>
-          <br />
-          <dl class="info-description-list">
-            <dd>- <strong>Breathe to the rhythm</strong> of cruise music's beat!</dd>
-            <dd>- Use your <strong>mobile's flash to blind robots!</strong></dd>
-            <dd>- <strong>Dash a certain distance</strong> using your jet boots to dodge risks!</dd>
-            <dd>- <strong>Explore and be careful</strong> with the environment, you don't want to make noise that is
-              not covered by music's beat.</dd>
-          </dl>
-          <img class="info-img info-img-logo" src="images/logo-DeathByMisstep.png" alt="Logo Death By Misstep">
-          <p class="info-text">Enjoy an <strong>experience full of rhythm and horror</strong> like you've never seen
-            before.</p>
-          <p class="info-text">Can you survive this cruise ship full of malfunctioning robots on a
-            techno music fueled killing spree?</p>
-          <br />
-          <p class="info-text">Where is Death By Misstep set?</p>
-          <ul class="info-list">
-            <li>Takes place on a futuristic cruise designed for party marathons.</li>
-            <li>Unfold the mistery of why robot have gone crazy.</li>
-            <li>Story is told through messages you can find checking corpse's mobiles and also checking
-              your own mobile.</p>
-            </li>
-          </ul>
-          <img class="info-img info-img-concept" src="images/concept.jpg" alt="Concept">
-        </div>
-
-        <!-- Media Section -->
-        <div class="col-lg-4">
-          <div class="color-section content-box media-box">
-            <a href="images/screenshot1.png" target="_blank"><img class="screenshots-img" src="images/screenshot1.png"
-                alt="Screenshot 1"></a>
-            <a href="images/screenshot2.png" target="_blank"><img class="screenshots-img" src="images/screenshot2.png"
-                alt="Screenshot 2"></a>
-            <a href="images/screenshot3.png" target="_blank"><img class="screenshots-img" src="images/screenshot3.png"
-                alt="Screenshot 3"></a>
-            <a href="images/screenshot4.png" target="_blank"><img class="screenshots-img" src="images/screenshot4.png"
-                alt="Screenshot 4"></a>
-            <a href="images/screenshot5.png" target="_blank"><img class="screenshots-img" src="images/screenshot5.png"
-                alt="Screenshot 5"></a>
-          </div>
-
-          <div class="content-box">
-            <a class="devlog-link" href="https://misstepstudio.itch.io/deathbymisstep/devlog" target="_blank">
-              <img class="devlog-img" src="images/goDevlog.png" alt="Go Devlog" title="Go Devlog">
-            </a>
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
 
+        <div class="game-cards row row-cols-1 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card bg-primary">
+              <img
+                src="https://placehold.co/800x860"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-header">
+                <h5><strong>Rhythm</strong></h5>
+              </div>
+              <div class="card-body">
+                <div class="card-text text-start">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, iste. Quasi mollitia itaque odio, sapiente est
+                    laudantium corrupti.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-primary">
+              <img
+                src="https://placehold.co/800x860"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-header">
+                <h5><strong>Stealth</strong></h5>
+              </div>
+              <div class="card-body">
+                <div class="card-text text-start">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, iste. Quasi mollitia itaque odio, sapiente est
+                    laudantium corrupti.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-primary">
+              <img
+                src="https://placehold.co/800x860"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-header">
+                <h5><strong>Horror</strong></h5>
+              </div>
+              <div class="card-body">
+                <div class="card-text text-start">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt, iste. Quasi mollitia itaque odio, sapiente est
+                    laudantium corrupti.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Team Section -->
-  <section id="team">
-    <div class="container-fluid">
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <img
+              class="faq-img"
+              src="../images/logo-DeathByMisstep.png"
+              alt="Logo Death By Misstep"
+            />
+          </div>
 
-      <div class="row">
+          <div class="col-lg-7">
+            <div class="faq-card">
+              <div class="card bg-primary text-start">
+                <div class="card-header">
+                  <h3><strong>FAQ</strong></h3>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>
+                      <strong
+                        >When will <em>Death By Misstep</em> officially
+                        launch?</strong
+                      >
+                    </h5>
+                  </div>
+                  <div class="card-text">
+                    <h6>
+                      Release for <i>Death By Misstep</i> will be in March 2024.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Team Section -->
+    <section id="team">
+      <div class="container-fluid">
         <div class="content-box">
-          <img class="team-title-img" src="images/teamTitle.png" alt="Team Section Title">
+          <h2>THE TEAM</h2>
+          <!-- <img
+            class="team-title-img"
+            src="images/teamTitle.png"
+            alt="Team Section Title"
+          /> -->
         </div>
 
         <div class="color-section content-box">
-
           <div class="row team-content justify-content-center">
             <div class="col-lg-6 team-member">
               <div class="col-md-4">
                 <a href="https://sfaith3.github.io/portfolio" target="_blank">
-                  <img class="team-member-img" src="images/Samuel-Balcells.png" alt="Samuel Balcells"
-                    title="Samuel Balcells">
+                  <img
+                    class="team-member-img"
+                    src="images/Samuel-Balcells.png"
+                    alt="Samuel Balcells"
+                    title="Samuel Balcells"
+                  />
                 </a>
               </div>
               <div class="col-md-8">
                 <div class="team-card">
                   <h4 class="team-card-title">Samuel Balcells</h4>
-                  <h6 class="team-card-category text-muted">CO-FOUNDER & PROGRAMMER</h6>
-                  <p class="team-card-content">He loves Jesus and he's passionate about video games. His favorite video
-                    game is <i>StarCraft II</i>. Always hot with a drink of ice water.</p>
+                  <h6 class="team-card-category text-muted">
+                    CO-FOUNDER & PROGRAMMER
+                  </h6>
+                  <p class="team-card-content">
+                    He loves Jesus and he's passionate about video games. His
+                    favorite video game is <i>StarCraft II</i>. Always hot with
+                    a drink of ice water.
+                  </p>
                   <a href="https://sfaith3.github.io/portfolio" target="_blank">
                     <i class="team-card-link fa-solid fa-globe fa-2xl"></i>
                   </a>
@@ -208,16 +292,23 @@
             <div class="col-lg-6 team-member">
               <div class="col-md-4">
                 <a href="https://juanmasanchezfernandez.com" target="_blank">
-                  <img class="team-member-img" src="images/Juanma-Sanchez.png" alt="Juanma Sánchez"
-                    title="Juanma Sánchez">
+                  <img
+                    class="team-member-img"
+                    src="images/Juanma-Sanchez.png"
+                    alt="Juanma Sánchez"
+                    title="Juanma Sánchez"
+                  />
                 </a>
               </div>
               <div class="col-md-8">
                 <div class="team-card">
                   <h4 class="team-card-title">Juanma Sánchez</h4>
                   <h6 class="team-card-category text-muted">GAME DESIGNER</h6>
-                  <p class="team-card-content">He's in love with video games and cinema as artistic mediums. Heavily
-                    inspired by the work of Team Silent. Always prefers a strong, unsweetened coffee.</p>
+                  <p class="team-card-content">
+                    He's in love with video games and cinema as artistic
+                    mediums. Heavily inspired by the work of Team Silent. Always
+                    prefers a strong, unsweetened coffee.
+                  </p>
                   <a href="https://juanmasanchezfernandez.com" target="_blank">
                     <i class="team-card-link fa-solid fa-globe fa-2xl"></i>
                   </a>
@@ -225,36 +316,43 @@
               </div>
             </div>
             <!-- <div class="col-lg-6 team-member">
-              <div class="col-md-4">
-                <a href="https://www.artstation.com/" target="_blank">
-                  <img class="team-member-img" src="images/Fermin-Berasain.png" alt="Fermin Berasain"
-                    title="Fermin Berasain">
-                </a>
-              </div>
-              <div class="col-md-8">
-                <div class="team-card">
-                  <h4 class="team-card-title">Fermin Berasain</h4>
-                  <h6 class="team-card-category text-muted">3D ARTIST</h6>
-                  <p class="team-card-content">llll.</p>
-                  <a href="https://www.artstation.com/" target="_blank">
-                    <i class="team-card-link fa-brands fa-artstation fa-2xl"></i>
-                  </a>
-                </div>
-              </div>
-            </div> -->
+                  <div class="col-md-4">
+                    <a href="https://www.artstation.com/" target="_blank">
+                      <img class="team-member-img" src="images/Fermin-Berasain.png" alt="Fermin Berasain"
+                        title="Fermin Berasain">
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="team-card">
+                      <h4 class="team-card-title">Fermin Berasain</h4>
+                      <h6 class="team-card-category text-muted">3D ARTIST</h6>
+                      <p class="team-card-content">llll.</p>
+                      <a href="https://www.artstation.com/" target="_blank">
+                        <i class="team-card-link fa-brands fa-artstation fa-2xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div> -->
             <div class="col-lg-6 team-member">
               <div class="col-md-4">
                 <a href="https://jorgenunezmusic.es" target="_blank">
-                  <img class="team-member-img" src="images/Jorge-Nuñez.png" alt="Jorge Núñez" title="Jorge Núñez">
+                  <img
+                    class="team-member-img"
+                    src="images/Jorge-Nuñez.png"
+                    alt="Jorge Núñez"
+                    title="Jorge Núñez"
+                  />
                 </a>
               </div>
               <div class="col-md-8">
                 <div class="team-card">
                   <h4 class="team-card-title">Jorge Núñez</h4>
                   <h6 class="team-card-category text-muted">COMPOSER & SFX</h6>
-                  <p class="team-card-content">Obsessed with being diegetic. Fan of RTS video games. He'll look for any
-                    excuse
-                    in order to use his equipment and to record random noises.</p>
+                  <p class="team-card-content">
+                    Obsessed with being diegetic. Fan of RTS video games. He'll
+                    look for any excuse in order to use his equipment and to
+                    record random noises.
+                  </p>
                   <a href="https://jorgenunezmusic.es" target="_blank">
                     <i class="team-card-link fa-solid fa-globe fa-2xl"></i>
                   </a>
@@ -263,101 +361,169 @@
             </div>
             <div class="col-lg-6 team-member">
               <div class="col-md-4">
-                <a href="https://www.artstation.com/sergiserramerlos" target="_blank">
-                  <img class="team-member-img" src="images/Sergi-Serra.png" alt="Sergi Serra" title="Sergi Serra">
+                <a
+                  href="https://www.artstation.com/sergiserramerlos"
+                  target="_blank"
+                >
+                  <img
+                    class="team-member-img"
+                    src="images/Sergi-Serra.png"
+                    alt="Sergi Serra"
+                    title="Sergi Serra"
+                  />
                 </a>
               </div>
               <div class="col-md-8">
                 <div class="team-card">
                   <h4 class="team-card-title">Sergi Serra</h4>
                   <h6 class="team-card-category text-muted">CONCEPT ARTIST</h6>
-                  <p class="team-card-content">A concept artist from Barcelona who loves three things: video games,
-                    music
-                    and food.</p>
-                  <a href="https://www.artstation.com/sergiserramerlos" target="_blank">
-                    <i class="team-card-link fa-brands fa-artstation fa-2xl"></i>
+                  <p class="team-card-content">
+                    A concept artist from Barcelona who loves three things:
+                    video games, music and food.
+                  </p>
+                  <a
+                    href="https://www.artstation.com/sergiserramerlos"
+                    target="_blank"
+                  >
+                    <i
+                      class="team-card-link fa-brands fa-artstation fa-2xl"
+                    ></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 team-member">
               <div class="col-md-4">
-                <a href="https://www.artstation.com/simonadumascu" target="_blank">
-                  <img class="team-member-img" src="images/Simona-Dumascu.png" alt="Simona Dumăscu"
-                    title="Simona Dumăscu">
+                <a
+                  href="https://www.artstation.com/simonadumascu"
+                  target="_blank"
+                >
+                  <img
+                    class="team-member-img"
+                    src="images/Simona-Dumascu.png"
+                    alt="Simona Dumăscu"
+                    title="Simona Dumăscu"
+                  />
                 </a>
               </div>
               <div class="col-md-8">
                 <div class="team-card">
                   <h4 class="team-card-title">Simona Dumăscu</h4>
                   <h6 class="team-card-category text-muted">2D ARTIST</h6>
-                  <p class="team-card-content">She can be found in cafés sketching people without their permission.
-                    Paradoxically a fan of <i>The Witcher</i> series as well as <i>The Sims</i>. Fanatic of book quotes.
+                  <p class="team-card-content">
+                    She can be found in cafés sketching people without their
+                    permission. Paradoxically a fan of
+                    <i>The Witcher</i> series as well as <i>The Sims</i>.
+                    Fanatic of book quotes.
                   </p>
-                  <a href="https://www.artstation.com/simonadumascu" target="_blank">
-                    <i class="team-card-link fa-brands fa-artstation fa-2xl"></i>
+                  <a
+                    href="https://www.artstation.com/simonadumascu"
+                    target="_blank"
+                  >
+                    <i
+                      class="team-card-link fa-brands fa-artstation fa-2xl"
+                    ></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="team-logo-container">
-            <a href="https://www.linkedin.com/company/misstepstudio" target="_blank">
-              <img class="team-logo" src="images/logo-MisstepStudio.png" alt="Misstep Studio">
-              <img class="top-img" src="images/hoverLogo-MisstepStudio.png" alt="Misstep Studio" title="Misstep Studio">
-            </a>
-          </div>
-
         </div>
-
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Contributors Section -->
-  <section id="contributors">
-    <div class="container-fluid">
-
-      <div class="row">
-
+    <!-- Contributors Section -->
+    <section id="contributors">
+      <div class="container-fluid">
         <div class="content-box">
-          <img class="contributors-title-img" src="images/contributorsTitle.png" alt="Contributors Section Title">
+          <h2>THE CONTRIBUTORS</h2>
+          <!-- <img
+            class="contributors-title-img"
+            src="images/contributorsTitle.png"
+            alt="Contributors Section Title"
+          /> -->
         </div>
 
         <div class="color-section content-box">
-
-          <div class="row contributors-content justify-content-center align-items-center">
+          <div
+            class="row contributors-content justify-content-center align-items-center"
+          >
             <div class="col-md-6 contributor">
               <a href="https://www.levelup-gamedevhub.com" target="_blank">
-                <img class="contributor-img" src="images/level-up.png" alt="Level Up [Game Dev Hub]"
-                  title="Level Up [Game Dev Hub]">
+                <img
+                  class="contributor-img"
+                  src="images/level-up.png"
+                  alt="Level Up [Game Dev Hub]"
+                  title="Level Up [Game Dev Hub]"
+                />
               </a>
             </div>
             <div class="col-md-6 contributor">
               <a href="https://aws.amazon.com" target="_blank">
-                <img class="contributor-img" src="images/amazon-aws.png" alt="Amazon Web Services"
-                  title="Amazon Web Services">
+                <img
+                  class="contributor-img"
+                  src="images/amazon-aws.png"
+                  alt="Amazon Web Services"
+                  title="Amazon Web Services"
+                />
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Social Media Section -->
+    <section id="social-media">
+      <div
+        class="container-fluid social-media-container d-flex justify-content-center"
+      >
+        <a href="https://twitter.com/DeathByMisstep" target="_blank">
+          <i class="fab fa-x-twitter fa-lg" alt="Twitter / X"></i>
+        </a>
+
+        <a href="https://www.instagram.com/deathbymisstep" target="_blank">
+          <i class="fab fa-instagram fa-lg" alt="Instagram"></i>
+        </a>
+
+        <a href="https://youtube.com/@DeathByMisstep" target="_blank">
+          <i class="fab fa-youtube fa-lg" alt="YouTube"></i>
+        </a>
+
+        <a href="https://discord.gg/7TXUN7avjt" target="_blank">
+          <i class="fab fa-discord fa-lg" alt="Discord"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="team-logo-container">
+          <a
+            href="https://www.linkedin.com/company/misstepstudio"
+            target="_blank"
+          >
+            <img
+              class="team-logo"
+              src="images/logo-MisstepStudio.png"
+              alt="Misstep Studio"
+            />
+            <img
+              class="top-img"
+              src="images/hoverLogo-MisstepStudio.png"
+              alt="Misstep Studio"
+              title="Misstep Studio"
+            />
+          </a>
         </div>
 
+        <p class="copyright">
+          © 2023 Misstep Studio, S.L. All Rights Reserved.
+        </p>
       </div>
+    </footer>
 
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer id="footer">
-    <div class="container-fluid">
-      <p class="copyright">© 2023 Misstep Studio, S.L. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script src="index.js" charset="utf-8"></script>
-</body>
-
+    <script src="index.js" charset="utf-8"></script>
+  </body>
 </html>

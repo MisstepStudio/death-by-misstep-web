@@ -51,8 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function AddEventListenersInTeam() {
   const teamMemberImgs = document.querySelectorAll(".team-member-img");
   const teamCardLinks = document.querySelectorAll(".team-card-link");
+  const teamSize = teamMemberImgs.length;
 
-  for (let i = 0; i < teamMemberImgs.length; i++) {
+  for (let i = 0; i < teamSize; i++) {
     teamMemberImgs[i].addEventListener("mouseover", function () {
       teamCardLinks[i].classList.toggle("team-card-link-hover");
     });
