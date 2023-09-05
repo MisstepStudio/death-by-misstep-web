@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Mohave", "Montserrat", "sans-serif";
   text-align: center;
 }
 
@@ -30,8 +30,9 @@ a {
   text-decoration: none;
 }
 
+a,
 a:hover {
-  color: #eaf6f6;
+  color: white;
 }
 
 .team-member div {
@@ -44,8 +45,16 @@ a:hover {
 }
 
 /* Cards */
-.faq-card .card-title {
-  margin-bottom: 20px;
+.card {
+  border-color: #0c1d29;
+}
+
+.card-header {
+  background-color: #205b5c;
+}
+
+.card-body {
+  background-color: #276f70;
 }
 
 .card-header h5,
@@ -55,7 +64,7 @@ a:hover {
 
 .card-title h5,
 .card-text h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Containers */
@@ -85,6 +94,8 @@ a:hover {
 
 .language-btn-right {
   border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #0c1d29;
+  border-color: #0c1d29;
 }
 
 #title {
@@ -97,28 +108,27 @@ a:hover {
   margin-top: 175px;
 }
 
-.btn-wishlist-steam,
-.btn-wishlist-steam:disabled {
-  /* TODO: Remove '...:disabled' when Steam page is published. */
+.btn-wishlist-steam {
   padding: 15px 50px;
   text-transform: uppercase;
-  background-color: #0c1d29;
-  border-color: #0c1d29;
   margin: 100px;
 }
 
-.btn-wishlist-steam:hover {
+.btn-wishlist-steam,
+.btn-wishlist-steam:hover,
+.btn-wishlist-steam:disabled {
+  /* TODO: Remove '...:disabled' when Steam page is published. */
   background-color: #0c1d29;
   border-color: #0c1d29;
 }
 
 .btn-text {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
 }
 
 /* Game Section */
 #game {
-  background-color: rgb(23, 22, 26);
+  background-color: #0c1d29;
 }
 
 /* FAQ Section */
@@ -132,9 +142,13 @@ a:hover {
   width: 100%;
 }
 
+.faq-card .card-title {
+  margin-bottom: 20px;
+}
+
 /* Team Section */
 #team {
-  background-color: rgb(23, 22, 26);
+  background-color: #0c1d29;
 }
 
 .team-member {
@@ -159,26 +173,21 @@ a:hover {
 }
 
 .team-card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
-.team-card-category {
-  font-size: 0.95rem;
-}
-
+.team-card-category,
 .team-card-content {
-  color: white;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .team-card-link {
   margin-top: 25px;
-  color: #ea110f;
 }
 
 .team-card-link:hover,
 .team-card-link-hover {
-  color: #eaf6f6;
+  color: #eb100f;
 }
 
 /* Contributors Section */
@@ -194,7 +203,7 @@ a:hover {
 
 /* Social Media Section */
 #social-media {
-  background-color: rgb(23, 22, 26);
+  background-color: #0c1d29;
 }
 
 .social-media-container {
@@ -202,19 +211,18 @@ a:hover {
 }
 
 .social-media-container a {
-  color: white;
   padding: 10px;
   margin: 0 40px;
   font-size: 2rem;
 }
 
 .social-media-container a:hover {
-  color: black;
+  color: #eb100f;
 }
 
 /* Footer Section */
 #footer {
-  background-color: rgb(23, 22, 26);
+  background-color: #0c1d29;
 }
 
 #footer .container-fluid {
@@ -227,14 +235,16 @@ a:hover {
 }
 
 .footer-logo img {
-  width: 60%;
+  width: 65%;
 }
 
-.footer-logo {
+.footer-logo a:hover {
+  opacity: 0.7;
 }
 
 .copyright {
   font-size: 0.85rem;
+  font-family: "Montserrat", "sans-serif";
   padding: 10px 0 20px;
   margin-bottom: 0;
 }

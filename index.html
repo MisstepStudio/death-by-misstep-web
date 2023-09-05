@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;700&family=Montserrat:wght@100;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -92,17 +92,13 @@
           href="https://store.steampowered.com/app/"
           target="_blank"
         >
-          <span class="btn-text">Wishlist on Steam today!</span>
-          <span>
-            <i class="fa fa-steam"></i>
-          </span>
+          <span class="btn-text">Wishlist on Steam today! <i class="fa fa-steam"></i></span>
         </a> -->
         <!-- TODO: Remove the button when Steam page is published. -->
         <button class="btn btn-primary btn-wishlist-steam" disabled>
-          <span class="btn-text">Wishlist on Steam comming soon!</span>
-          <span>
-            <i class="fa fa-steam"></i>
-          </span>
+          <span class="btn-text"
+            >Wishlist on Steam comming soon! <i class="fa fa-steam"></i
+          ></span>
         </button>
       </div>
     </section>
@@ -140,15 +136,20 @@
         <div class="game-cards row row-cols-1 row-cols-lg-3 g-4">
           <div class="col">
             <div class="card bg-primary">
-              <img
+              <!-- <img
                 src="https://placehold.co/800x860"
                 class="card-img-top"
-                alt="..."
+                alt="Rhythm"
+              /> -->
+              <img
+                src="../images/screenshot-3.png"
+                class="card-img-top"
+                alt="Rhythm"
               />
               <div class="card-header">
                 <h5><strong>Rhythm</strong></h5>
               </div>
-              <div class="card-body">
+              <div class="card-body rounded-bottom">
                 <div class="card-text text-start">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -162,15 +163,20 @@
 
           <div class="col">
             <div class="card bg-primary">
-              <img
+              <!-- <img
                 src="https://placehold.co/800x860"
                 class="card-img-top"
-                alt="..."
+                alt="Stealth"
+              /> -->
+              <img
+                src="../images/screenshot-1.png"
+                class="card-img-top"
+                alt="Stealth"
               />
               <div class="card-header">
                 <h5><strong>Stealth</strong></h5>
               </div>
-              <div class="card-body">
+              <div class="card-body rounded-bottom">
                 <div class="card-text text-start">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -184,15 +190,20 @@
 
           <div class="col">
             <div class="card bg-primary">
-              <img
+              <!-- <img
                 src="https://placehold.co/800x860"
                 class="card-img-top"
-                alt="..."
+                alt="Horror"
+              /> -->
+              <img
+                src="../images/screenshot-4.png"
+                class="card-img-top"
+                alt="Horror"
               />
               <div class="card-header">
                 <h5><strong>Horror</strong></h5>
               </div>
-              <div class="card-body">
+              <div class="card-body rounded-bottom">
                 <div class="card-text text-start">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -306,7 +317,7 @@
                 </div>
               </div>
 
-              <div class="card-body">
+              <div class="card-body rounded-bottom">
                 <div class="card-title">
                   <h5>
                     <strong
@@ -360,10 +371,11 @@
                   <h4 class="team-card-title">
                     Samuel Balcells
                     <a
+                      class="team-card-link"
                       href="https://sfaith3.github.io/portfolio"
                       target="_blank"
                     >
-                      <i class="team-card-link fa-solid fa-globe fa-lg"></i>
+                      <i class="fa-solid fa-globe"></i>
                     </a>
                   </h4>
                   <h6 class="team-card-category text-muted">
@@ -393,10 +405,11 @@
                   <h4 class="team-card-title">
                     Juanma Sánchez
                     <a
+                      class="team-card-link"
                       href="https://juanmasanchezfernandez.com"
                       target="_blank"
                     >
-                      <i class="team-card-link fa-solid fa-globe fa-lg"></i>
+                      <i class="fa-solid fa-globe"></i>
                     </a>
                   </h4>
                   <h6 class="team-card-category text-muted">GAME DESIGNER</h6>
@@ -423,8 +436,12 @@
                 <div class="team-card">
                   <h4 class="team-card-title">
                     Jorge Núñez
-                    <a href="https://jorgenunezmusic.es" target="_blank">
-                      <i class="team-card-link fa-solid fa-globe fa-lg"></i>
+                    <a
+                      class="team-card-link"
+                      href="https://jorgenunezmusic.es"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-globe"></i>
                     </a>
                   </h4>
                   <h6 class="team-card-category text-muted">COMPOSER & SFX</h6>
@@ -455,12 +472,11 @@
                   <h4 class="team-card-title">
                     Sergi Serra
                     <a
+                      class="team-card-link"
                       href="https://www.artstation.com/sergiserramerlos"
                       target="_blank"
                     >
-                      <i
-                        class="team-card-link fa-brands fa-artstation fa-lg"
-                      ></i>
+                      <i class="fa-brands fa-artstation"></i>
                     </a>
                   </h4>
                   <h6 class="team-card-category text-muted">CONCEPT ARTIST</h6>
@@ -490,12 +506,11 @@
                   <h4 class="team-card-title">
                     Simona Dumăscu
                     <a
+                      class="team-card-link"
                       href="https://www.artstation.com/simonadumascu"
                       target="_blank"
                     >
-                      <i
-                        class="team-card-link fa-brands fa-artstation fa-lg"
-                      ></i>
+                      <i class="fa-brands fa-artstation"></i>
                     </a>
                   </h4>
                   <h6 class="team-card-category text-muted">2D ARTIST</h6>
@@ -583,21 +598,13 @@
               href="https://www.linkedin.com/company/misstepstudio"
               target="_blank"
             >
-              <img
-                src="images/logo-MisstepStudio.png"
-                class="img-fluid"
-                alt="Misstep Studio"
-              />
+              <img src="images/logo-MisstepStudio.png" alt="Misstep Studio" />
             </a>
           </div>
 
           <div class="col-md-4 footer-logo">
             <a href="https://www.unity.com" target="_blank">
-              <img
-                src="images/logo-Unity-MadeWith.png"
-                class="img-fluid"
-                alt="Unity"
-              />
+              <img src="images/logo-Unity-MadeWith.png" alt="Unity" />
             </a>
           </div>
 
@@ -605,7 +612,6 @@
             <a href="https://deathbymisstep.com">
               <img
                 src="images/logo-DeathByMisstep.png"
-                class="img-fluid"
                 style="filter: brightness(0) invert(1)"
                 alt="Death By Misstep"
               />
