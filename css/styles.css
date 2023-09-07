@@ -1,10 +1,5 @@
 body {
-  background-image: url(../images/background.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat-y;
-  background-color: #101010;
-  font-family: "Montserrat";
+  font-family: "Mohave", "Montserrat", "sans-serif";
   text-align: center;
 }
 
@@ -14,21 +9,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ea110f;
-  font-family: "Montserrat", "sans-serif";
+  color: white;
   font-weight: 500;
 }
 
-p,
-dl,
-ul {
+p {
   margin-bottom: 0;
 }
 
 p,
-em,
-dd,
-li {
+em {
   color: white;
 }
 
@@ -40,56 +30,47 @@ a {
   text-decoration: none;
 }
 
+a,
 a:hover {
-  color: #EAF6F6;
+  color: white;
 }
 
-dd,
-li {
-  text-align: left;
-}
-
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12 {
+.team-member div {
   float: left;
 }
 
-/* Top Images */
-.top-img {
-  position: absolute;
-  left: 2px;
-  opacity: 0;
+/* Rows */
+.row {
+  margin-top: 1rem;
 }
 
-.top-img:hover {
-  opacity: 1;
+/* Cards */
+.card {
+  border-color: #0c1d29;
 }
 
-/* Iframes */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+.card-header {
+  background-color: #205b5c;
+}
+
+.card-body {
+  background-color: #276f70;
+}
+
+.card-header h5,
+.card-header h3 {
+  margin: 8px 0;
+}
+
+.card-title h5,
+.card-text h6 {
+  font-size: 1.2rem;
 }
 
 /* Containers */
 .container-fluid {
-  padding: 2% 10%;
+  padding: 3% 16%;
+  padding-bottom: 4%;
 }
 
 .content-box {
@@ -97,13 +78,9 @@ li {
 }
 
 /* Sections */
-.color-section {
-  /* background-color: #0e0e0e; */
-}
-
-/* Language Section */
-#language .container-fluid {
-  padding: 1% 9%;
+/* Title Section */
+.language-container {
+  padding: 2% 9%;
 }
 
 .language-img {
@@ -112,96 +89,68 @@ li {
 }
 
 .language-btn-left {
-  border-radius: .25rem 0 0 .25rem;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .language-btn-right {
-  border-radius: 0 .25rem .25rem 0;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #0c1d29;
+  border-color: #0c1d29;
 }
 
-/* Title Section */
-#title .container-fluid {
-  padding: 0 10% 2%;
+#title {
+  background-image: url("../images/title-banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.title-img {
-  width: 70%;
+.wishlist-steam-container {
+  margin-top: 175px;
 }
 
-/* Social Media Section */
-#social-media .container-fluid {
-  padding: 0.5% 0;
+.btn-wishlist-steam {
+  padding: 15px 50px;
+  text-transform: uppercase;
+  margin: 100px;
 }
 
-.social-container {
-  display: inline-block;
-  position: relative;
-  width: 5%;
+.btn-wishlist-steam,
+.btn-wishlist-steam:hover,
+.btn-wishlist-steam:disabled {
+  /* TODO: Remove '...:disabled' when Steam page is published. */
+  background-color: #0c1d29;
+  border-color: #0c1d29;
 }
 
-.social-container img {
+.btn-text {
+  font-size: 1.5rem;
+}
+
+/* Game Section */
+#game {
+  background-color: #0c1d29;
+}
+
+/* FAQ Section */
+#faq {
+  background-image: url("../images/screenshot-3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.faq-img {
   width: 100%;
-  height: 100%;
 }
 
-.social-container:hover .social-img {
-  opacity: 0;
-}
-
-/* Content Section */
-#content .container-fluid {
-  padding-top: 2%;
-}
-
-/* Info Section */
-.info-title-img {
-  width: 35%;
-}
-
-.info-img {
-  padding: 25px 0;
-}
-
-.info-img-logo {
-  width: 86%;
-}
-
-.info-img-concept {
-  width: 50%;
-}
-
-.info-text {
-  padding: 0 40px;
-  text-align: left;
-}
-
-.info-description-list {
-  padding: 0 40px;
-}
-
-.info-list {
-  padding: 0 75px;
-}
-
-.info-video-container {
-  position: relative;
-  width: 90%;
-  margin: 25px auto;
-  overflow: hidden;
-  padding-top: 56.25%;
-  /* 16:9 Aspect Ratio */
-}
-
-.screenshots-img {
-  margin-bottom: 30px;
-  width: 96%;
-}
-
-.devlog-img {
-  width: 102%;
+.faq-card .card-title {
+  margin-bottom: 20px;
 }
 
 /* Team Section */
+#team {
+  background-color: #0c1d29;
+}
+
 .team-member {
   padding-left: 14px;
   padding-right: 38px;
@@ -213,70 +162,89 @@ li {
 }
 
 .team-card {
-  margin: 20px 0;
+  margin: 8px 0;
   padding-left: 6px;
   text-align: left;
 }
 
 .team-card-title,
 .team-card-category {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .team-card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
-.team-card-category {
-  font-size: 1.0rem;
-}
-
+.team-card-category,
 .team-card-content {
-  color: white;
+  font-size: 1.15rem;
 }
 
 .team-card-link {
   margin-top: 25px;
-  color: #ea110f
 }
 
 .team-card-link:hover,
 .team-card-link-hover {
-  color: #eaf6f6;
-}
-
-.team-logo-container {
-  display: inline-block;
-  position: relative;
-  margin-top: 65px;
-  width: 10%;
-}
-
-.team-logo-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.team-logo-container:hover .team-logo {
-  opacity: 0;
-}
-
-.team-logo {
-  width: 10%;
+  color: #eb100f;
 }
 
 /* Contributors Section */
+#contributors {
+  background-image: url("../images/screenshot-2.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .contributor-img {
   width: 25%;
 }
 
+/* Social Media Section */
+#social-media {
+  background-color: #0c1d29;
+}
+
+.social-media-container {
+  padding-bottom: 1%;
+}
+
+.social-media-container a {
+  padding: 10px;
+  margin: 0 40px;
+  font-size: 2rem;
+}
+
+.social-media-container a:hover {
+  color: #eb100f;
+}
+
 /* Footer Section */
+#footer {
+  background-color: #0c1d29;
+}
+
 #footer .container-fluid {
-  padding: 1% 0;
+  padding: 1% 30%;
+}
+
+.footer-logos-container {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 65%;
+}
+
+.footer-logo a:hover {
+  opacity: 0.7;
 }
 
 .copyright {
-  font-size: .85rem;
+  font-size: 0.85rem;
+  font-family: "Montserrat", "sans-serif";
   padding: 10px 0 20px;
   margin-bottom: 0;
 }
@@ -290,73 +258,64 @@ li {
     width: 99%;
   }
 
-  /* Info Section */
-  .info-title-img {
-    width: 65%;
-  }
+  /* Game Section */
+
+  /* FAQ Section */
 
   /* Team Section */
-  .team-title-img {
-    width: 80%;
-  }
-
-  .team-content div {
-    padding-left: 8px;
+  .team-card {
+    text-align: left;
   }
 
   /* Contributors Section */
-  .contributors-title-img {
-    width: 80%;
-  }
+
+  /* Social Section */
 
   /* Footer Section */
   .copyright {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 }
 
 @media (max-width: 1000px) {
   /* Mobile */
 
-  /* Language Section */
-  #language .button {
-    width: 2%;
+  /* Title Section */
+  .language-container {
+    padding-top: 6%;
   }
 
   .language-img {
     width: 5%;
   }
 
-  /* Social Media Section */
-  .social-container {
-    width: 10%;
-  }
-
-  .info-text,
-  .info-description-list,
-  .info-text,
-  .info-list {
-    font-size: 2.3rem;
-  }
+  /* FAQ Section */
 
   /* Team Section */
   .team-content {
     margin-left: 20px;
-    text-align: left;
   }
 
   .team-member-img {
     margin-left: 0px;
   }
 
-  .team-logo-container {
-    width: 20%;
+  .team-card {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .team-card-title {
+    margin-top: 0;
   }
 
   /* Contributors Section */
   .contributor {
     margin: 40px 0;
   }
+
+  /* Social Media Section */
 
   /* Footer Section */
   .copyright {
