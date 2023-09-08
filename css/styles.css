@@ -279,6 +279,9 @@ a:hover {
 
 @media (max-width: 1000px) {
   /* Mobile */
+  p {
+    font-size: 1.3rem;
+  }
 
   /* Title Section */
   .language-container {
