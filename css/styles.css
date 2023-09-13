@@ -162,7 +162,7 @@ a:hover {
 }
 
 .team-card {
-  margin: 8px 0;
+  margin: 20px 0 20px 0;
   padding-left: 6px;
   text-align: left;
 }
@@ -263,9 +263,6 @@ a:hover {
   /* FAQ Section */
 
   /* Team Section */
-  .team-card {
-    text-align: left;
-  }
 
   /* Contributors Section */
 
@@ -277,8 +274,8 @@ a:hover {
   }
 }
 
-@media (max-width: 1000px) {
-  /* Mobile */
+@media (max-width: 992px) {
+  /* Tablet */
   p {
     font-size: 1.3rem;
   }
@@ -290,6 +287,11 @@ a:hover {
 
   .language-img {
     width: 5%;
+  }
+
+  /* Game Section */
+  .w-50 {
+    width: 96% !important;
   }
 
   /* FAQ Section */
@@ -304,9 +306,7 @@ a:hover {
   }
 
   .team-card {
-    margin: 0;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 25px;
   }
 
   .team-card-title {
@@ -323,5 +323,14 @@ a:hover {
   /* Footer Section */
   .copyright {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+
+  /* Team Section */
+  .team-card {
+    text-align: center;
   }
 }
