@@ -1,6 +1,7 @@
 body {
   font-family: "Mohave", "Montserrat", "sans-serif";
   text-align: center;
+  background-color: #0c1d29;
 }
 
 h1,
@@ -127,9 +128,6 @@ a:hover {
 }
 
 /* Game Section */
-#game {
-  background-color: #0c1d29;
-}
 
 /* FAQ Section */
 #faq {
@@ -147,9 +145,6 @@ a:hover {
 }
 
 /* Team Section */
-#team {
-  background-color: #0c1d29;
-}
 
 .team-member {
   padding-left: 14px;
@@ -202,10 +197,6 @@ a:hover {
 }
 
 /* Social Media Section */
-#social-media {
-  background-color: #0c1d29;
-}
-
 .social-media-container {
   padding-bottom: 1%;
 }
@@ -221,10 +212,6 @@ a:hover {
 }
 
 /* Footer Section */
-#footer {
-  background-color: #0c1d29;
-}
-
 #footer .container-fluid {
   padding: 1% 30%;
 }
