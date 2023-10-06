@@ -145,7 +145,6 @@ a:hover {
 }
 
 /* Team Section */
-
 .team-member {
   padding-left: 14px;
   padding-right: 38px;
@@ -157,7 +156,7 @@ a:hover {
 }
 
 .team-card {
-  margin: 20px 0 20px 0;
+  margin: 15px 0 20px 0;
   padding-left: 6px;
   text-align: left;
 }
@@ -293,7 +292,7 @@ a:hover {
   }
 
   .team-card {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .team-card-title {
