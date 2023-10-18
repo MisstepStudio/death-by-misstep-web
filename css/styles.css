@@ -116,9 +116,7 @@ a:hover {
 }
 
 .btn-wishlist-steam,
-.btn-wishlist-steam:hover,
-.btn-wishlist-steam:disabled {
-  /* TODO: Remove '...:disabled' when Steam page is published. */
+.btn-wishlist-steam:hover {
   background-color: #0c1d29;
   border-color: #0c1d29;
 }
