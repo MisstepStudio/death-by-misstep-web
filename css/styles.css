@@ -103,10 +103,11 @@ a:hover {
   background-image: url("../images/title-banner.png");
   background-position: center;
   background-size: cover;
+  min-height: 46em;
 }
 
 .wishlist-steam-container {
-  margin-top: 175px;
+  margin-top: 200px;
 }
 
 .btn-wishlist-steam {
