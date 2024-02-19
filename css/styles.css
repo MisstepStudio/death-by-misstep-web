@@ -130,7 +130,7 @@ a:hover {
 
 /* FAQ Section */
 #faq {
-  background-image: url("../images/screenshot-3.png");
+  background-image: url("../images/faq.png");
   background-position: center;
   background-size: cover;
 }
@@ -185,7 +185,7 @@ a:hover {
 
 /* Contributors Section */
 #contributors {
-  background-image: url("../images/screenshot-2.png");
+  background-image: url("../images/contributors.png");
   background-position: center;
   background-size: cover;
 }
