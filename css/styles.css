@@ -184,6 +184,9 @@ a:hover {
 }
 
 /* Special Thanks Section */
+#special-thanks .container-fluid {
+  padding-top: 0;
+}
 
 /* Contributors Section */
 #contributors {
