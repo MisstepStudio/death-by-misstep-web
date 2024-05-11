@@ -183,11 +183,6 @@ a:hover {
   color: #eb100f;
 }
 
-/* Special Thanks Section */
-#special-thanks .container-fluid {
-  padding-top: 0;
-}
-
 /* Contributors Section */
 #contributors {
   background-image: url("../images/contributors.png");
