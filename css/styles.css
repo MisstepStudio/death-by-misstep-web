@@ -103,23 +103,27 @@ a:hover {
   background-image: url("../images/title-banner.png");
   background-position: center;
   background-size: cover;
-  min-height: 46em;
+  min-height: 66em;
 }
 
 .wishlist-steam-container {
-  margin-top: 200px;
+  margin-top: 400px;
 }
 
 .btn-wishlist-steam {
-  padding: 15px 50px;
+  padding: 20px 100px;
   text-transform: uppercase;
   margin: 100px;
 }
 
-.btn-wishlist-steam,
-.btn-wishlist-steam:hover {
+.btn-wishlist-steam {
   background-color: #0c1d29;
   border-color: #0c1d29;
+}
+
+.btn-wishlist-steam:hover {
+  background-color: #105082;
+  border-color: #105082;
 }
 
 .btn-text {
