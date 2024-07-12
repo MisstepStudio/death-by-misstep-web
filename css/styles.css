@@ -277,6 +277,14 @@ a:hover {
     width: 5%;
   }
 
+  #title {
+    background-image: url("../images/title-banner-mobile.png");
+  }
+
+  .wishlist-steam-container {
+    margin-top: 300px;
+  }
+
   /* Game Section */
   .w-50 {
     width: 96% !important;
@@ -316,15 +324,6 @@ a:hover {
 
 @media (max-width: 768px) {
   /* Mobile */
-
-  /* Title Section */
-  #title {
-    background-image: url("../images/title-banner-mobile.png");
-  }
-
-  .wishlist-steam-container {
-    margin-top: 300px;
-  }
 
   /* Team Section */
   .team-card {
