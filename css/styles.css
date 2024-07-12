@@ -126,7 +126,7 @@ a:hover {
 }
 
 .btn-text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 /* Game Section */
@@ -265,7 +265,19 @@ a:hover {
 @media (max-width: 992px) {
   /* Tablet and large mobiles */
   p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+  }
+
+  /* Cards */
+  .card-title h5,
+  .card-text h6 {
+    font-size: 1.5rem;
+  }
+
+  /* Containers */
+  .container-fluid {
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   /* Title Section */
@@ -283,6 +295,10 @@ a:hover {
 
   .wishlist-steam-container {
     margin-top: 300px;
+  }
+
+  .btn-text {
+    font-size: 2rem;
   }
 
   /* Game Section */
@@ -307,6 +323,12 @@ a:hover {
 
   .team-card-title {
     margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  .team-card-category,
+  .team-card-content {
+    font-size: 1.45rem;
   }
 
   /* Contributors Section */
