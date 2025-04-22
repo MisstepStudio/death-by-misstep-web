@@ -39,16 +39,17 @@ function isLanguageAvailable(currLanguage) {
 checkLanguage();
 
 document.addEventListener("DOMContentLoaded", () => {
-  AddEventListenersInTeam();
+  addEventListenersInTeam();
+  updateCopyrightYear();
 
   document
     .querySelector(".languageButton")
     .addEventListener("click", function () {
-      ChangeLanguage();
+      changeLanguage();
     });
 });
 
-function AddEventListenersInTeam() {
+function addEventListenersInTeam() {
   const teamMemberImgs = document.querySelectorAll(".team-member-img");
   const teamCardLinks = document.querySelectorAll(".team-card-link");
   const teamSize = teamMemberImgs.length;
@@ -64,7 +65,14 @@ function AddEventListenersInTeam() {
   }
 }
 
-function ChangeLanguage() {
+function updateCopyrightYear() {
+  const copyrightYearElement = document.querySelector("#copyrightYear");
+  if (copyrightYearElement) {
+    copyrightYearElement.textContent = new Date().getFullYear();
+  }
+}
+
+function changeLanguage() {
   let newLanguage = this.innerHTML;
   switch (newLanguage) {
     case "Español":
