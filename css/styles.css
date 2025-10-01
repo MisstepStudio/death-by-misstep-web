@@ -29,11 +29,14 @@ p {
 
 a {
   text-decoration: none;
+  color: #7de0e2;
+  transition: color 0.2s ease;
 }
 
-a,
-a:hover {
-  color: white;
+a:hover,
+.team-card-link:hover,
+.team-card-link-hover {
+  color: #eb100f;
 }
 
 .team-member div {
@@ -179,11 +182,6 @@ a:hover {
 
 .team-card-link {
   margin-top: 25px;
-}
-
-.team-card-link:hover,
-.team-card-link-hover {
-  color: #eb100f;
 }
 
 /* Contributors Section */
