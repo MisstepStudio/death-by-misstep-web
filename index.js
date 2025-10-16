@@ -40,7 +40,7 @@ checkLanguage();
 
 document.addEventListener("DOMContentLoaded", () => {
   addEventListenersInTeam();
-  updateCopyrightYear();
+  initCopyrightYear();
 
   document
     .querySelector(".languageButton")
@@ -65,11 +65,19 @@ function addEventListenersInTeam() {
   }
 }
 
-function updateCopyrightYear() {
+function initCopyrightYear() {
   const copyrightYearElement = document.querySelector("#copyrightYear");
-  if (copyrightYearElement) {
-    copyrightYearElement.textContent = new Date().getFullYear();
-  }
+  if (!copyrightYearElement) return;
+
+  fetch("https://worldtimeapi.org/api/timezone/UTC")
+    .then((response) => response.json())
+    .then((data) => {
+      const currentYear = new Date(data.utc_datetime).getFullYear();
+      copyrightYearElement.textContent = currentYear;
+    })
+    .catch(() => {
+      copyrightYearElement.textContent = new Date().getFullYear();
+    });
 }
 
 function changeLanguage() {
